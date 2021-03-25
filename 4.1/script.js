@@ -135,27 +135,36 @@ if (prodValue < 0 || sellValue < 0) {
 }
 
 /* Exercise 11 */
-let income = 2794;
-let baseIncome = ;
+let income = 3000;
+let baseIncome = 0;
+let netIncome = 0;
 
-/* INSS */
-if (income < 1556,94) {
-  income * 0.92 = baseIncome;
-  console.log(income * 0.92)
-  } else if (income < 2594,92) {
-    income * 0.91 = baseIncome;
-    console.log(income * 0.91);
-    } else if (income < 5189,82) {
-      income * 0.89 = baseIncome;
-      console.log(income * 0.89);   
-      } else {
-        income * 0.89 = baseIncome;
-        console.log(income - 570,88);
-      }
-
-If (baseIncome < 1903,98) {
+if (income < 1556.94) {
+  baseIncome = income * 0.92;
   console.log(baseIncome);
-} else if (baseIncome <2826,64) {
-    console.log(baseIncome * 0.925);
+  } else if (income < 2594.92) {
+  baseIncome = income * 0.91;
+  console.log(baseIncome);
+  } else if (income < 5189.82) {
+  baseIncome = income * 0.89;
+  console.log(baseIncome); 
+  } else {
+  baseIncome = income - 570.88;
+  console.log(baseIncome);
+  }
 
-}
+  if (baseIncome < 1903.98) {
+    console.log(baseIncome);
+    } else if (baseIncome < 2826.64) {
+    netIncome = baseIncome -((baseIncome * 0.075) - 142.80);
+    console.log(netIncome);
+    } else if (baseIncome < 3751.06) {
+    netIncome = baseIncome -((baseIncome * 0.15) - 354.80);
+    console.log(netIncome); 
+    } else if (baseIncome < 4664.68) {
+    netIncome = baseIncome -((baseIncome * 0.225) - 636.13);
+    console.log(netIncome);
+    } else {
+    netIncome = baseIncome -((baseIncome * 0.27) - 869.36);
+    console.log(netIncome);
+    }
