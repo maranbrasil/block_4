@@ -76,5 +76,20 @@ if ((pyramidBase % 2) != 1) {
       controlRight += 1;
       controlLeft -= 1;
     }
-      
+}
+
+// Exercise 6
+
+let number = 5
+let divSum = '';
+
+for (indexDiv = 2; indexDiv <= number; indexDiv += 1) {
+  if ((number % indexDiv) === 0) {
+    divSum = divSum += 1;
+  }
+}
+if (divSum <= 1) {
+  console.log('numero é primo');
+} else {
+  console.log ('número nao é primo');
 }
