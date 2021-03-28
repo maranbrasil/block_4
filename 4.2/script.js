@@ -42,7 +42,33 @@ for (indexOdd=0; indexOdd < numbers.length; indexOdd += 1) {
  }
 
  //Exercise 7
+ let var7 = 0;
+ let var7_2 = 0;
+ lesserNumber - 
 
+ for (index7 = 1; index7 < numbers.length; index7 += 1) {
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  var7 = numbers [index7-1]
+    var7_2 = numbers [index7]
+    console.log(var7, var7_2)
+    if (var7 < var7_2) {
+      lesserNum = var7;
+    } else{
+      lesserNum = var7_2;
+    }
+ } 
 
  //Exercise 8
 let array = [];
